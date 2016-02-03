@@ -3,8 +3,13 @@
 ### Getting Started
 
 The project is configured so that developers can start all services with
-one command: `foreman start -f Procfile.dev -e .env.dev`. You can find
-example configurations in `Procfile.dev.example` and `.env.dev.example`
+one command:
+
+```shell
+foreman start -f Procfile.dev -e .env.dev
+```
+
+You can find example configurations in `Procfile.dev.example` and `.env.dev.example`
 
 #### Service Dependencies
 
@@ -29,6 +34,12 @@ Then, run the following:
 rake db:create
 rake db:migrate
 ```
+
+#### Running Rails
+
+Run the web server under puma with `bundle exec puma -C config/puma.rb`. There
+seemed to be some problems running with `rails s`, where the server blew
+up because of a race condition with `LoggerSilence`
 
 #### Tweetstream Service
 
