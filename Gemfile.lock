@@ -327,6 +327,7 @@ DEPENDENCIES
   minitest-metadata (~> 0.5.3)
   minitest-spec-rails
   mocha
+  mono_logger
   pg
   pry
   puma
