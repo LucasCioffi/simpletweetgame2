@@ -33,6 +33,7 @@ Then, run the following:
 ```shell
 rake db:create
 rake db:migrate
+rake db:seed
 ```
 
 #### Running Rails
