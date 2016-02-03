@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Local Participation Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Board</th>
+      <th>Num moves</th>
+      <th>Num invites</th>
+      <th>Xpos</th>
+      <th>Ypos</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @local_participation_records.each do |local_participation_record| %>
+      <tr>
+        <td><%= local_participation_record.user_id %></td>
+        <td><%= local_participation_record.board_id %></td>
+        <td><%= local_participation_record.num_moves %></td>
+        <td><%= local_participation_record.num_invites %></td>
+        <td><%= local_participation_record.xpos %></td>
+        <td><%= local_participation_record.ypos %></td>
+        <td><%= link_to 'Show', local_participation_record %></td>
+        <td><%= link_to 'Edit', edit_local_participation_record_path(local_participation_record) %></td>
+        <td><%= link_to 'Destroy', local_participation_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Local participation record', new_local_participation_record_path %>

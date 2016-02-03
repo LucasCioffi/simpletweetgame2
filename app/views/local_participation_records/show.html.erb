@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @local_participation_record.user_id %>
+</p>
+
+<p>
+  <strong>Board:</strong>
+  <%= @local_participation_record.board_id %>
+</p>
+
+<p>
+  <strong>Num moves:</strong>
+  <%= @local_participation_record.num_moves %>
+</p>
+
+<p>
+  <strong>Num invites:</strong>
+  <%= @local_participation_record.num_invites %>
+</p>
+
+<p>
+  <strong>Xpos:</strong>
+  <%= @local_participation_record.xpos %>
+</p>
+
+<p>
+  <strong>Ypos:</strong>
+  <%= @local_participation_record.ypos %>
+</p>
+
+<%= link_to 'Edit', edit_local_participation_record_path(@local_participation_record) %> |
+<%= link_to 'Back', local_participation_records_path %>

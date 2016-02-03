@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @turn.user_id %>
+</p>
+
+<p>
+  <strong>Friend username:</strong>
+  <%= @turn.friend_username %>
+</p>
+
+<p>
+  <strong>Board:</strong>
+  <%= @turn.board_id %>
+</p>
+
+<p>
+  <strong>Command:</strong>
+  <%= @turn.command %>
+</p>
+
+<p>
+  <strong>Xpos:</strong>
+  <%= @turn.xpos %>
+</p>
+
+<p>
+  <strong>Ypos:</strong>
+  <%= @turn.ypos %>
+</p>
+
+<%= link_to 'Edit', edit_turn_path(@turn) %> |
+<%= link_to 'Back', turns_path %>
