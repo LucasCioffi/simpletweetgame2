@@ -1,0 +1,5 @@
+web: bundle exec puma -C config/puma.rb
+redis: redis-server
+cable: bundle exec puma -p $STG_ACTION_CABLE_PORT cable/config.ru
+worker: bundle exec resque-pool --environment development
+tweetstream_server: bundle exec rake tweetstream:start
