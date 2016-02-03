@@ -1,6 +1,6 @@
 /Procfile.dev
 /.env.dev
-
+/dump.rdb
 
 *.rbc
 capybara-*.html
