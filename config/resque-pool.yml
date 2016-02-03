@@ -1,0 +1,2 @@
+---
+'*': <%= ENV.fetch('STG_WORKER_CONCURRENCY', 5) %>
