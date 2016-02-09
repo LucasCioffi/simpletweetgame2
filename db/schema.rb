@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160131064617) do
+ActiveRecord::Schema.define(version: 20160209010217) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,8 @@ ActiveRecord::Schema.define(version: 20160131064617) do
     t.datetime "updated_at",        null: false
     t.text     "profile_photo_url"
     t.string   "twitter_user_id"
+    t.string   "unique1"
+    t.string   "unique2"
   end
 
 end

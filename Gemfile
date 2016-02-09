@@ -25,6 +25,8 @@ gem 'resque'
 gem 'resque-pool'
 gem 'resque-web', require: 'resque_web' #TODO: move to :development
 gem 'mono_logger'
+gem 'omniauth-oauth2'
+gem 'omniauth-twitter'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

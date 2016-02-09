@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   root 'boards#show'
 
+  match '/auth/:provider/callback', to: 'sessions#create_from_omniauth', via: [:get, :post]
+  get '/logout', to: 'sessions#destroy'
+
   mount ResqueWeb::Engine => '/resque_web'
 
   # Serve websocket cable requests in-process

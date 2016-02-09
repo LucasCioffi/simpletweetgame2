@@ -7,13 +7,19 @@
       </li>
     </ul>
     <div style="text-align:right; position:relative; left:-10px; top:10px;">
+      <% if current_user %>
+        Welcome, <%= current_user.username %>.
+        <a type="button" class="btn btn-sm" href="/logout" style="color:white;">Logout</a>
+      <% else %>
+        <a type="button" class="btn btn-sm btn-danger" href="/auth/twitter" style="color:white;">Login</a>
+      <% end %>
       <button type="button" class="btn btn-sm btn-info header_option" data-section="more_info">How to Play</button>
     </div>
   </div><br>
   <div id="more_info_section" class="header_option_container">
     <i class="fa fa-close fa-lg close_header_option_container"></i>
     <span class="heading">How To Play</span><br>
-    SimpleTweet Game is a fun way to connect with friends and make new ones.
+    SimpleTweet Game is a fun way to connect with friends.
   </div>
 </nav>
 <br><br><br>
