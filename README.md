@@ -2,6 +2,11 @@
 
 ### Getting Started
 
+You can find example configurations in `Procfile.dev.example` and `.env.dev.example`
+Create a copy of each file and remove '.example' from the names of the copied files.
+You will have to set each of the environment variables mentioned in `.env.dev`
+and make sure that file is added to your `.gitignore`.
+
 The project is configured so that developers can start all services with
 one command:
 
@@ -9,7 +14,7 @@ one command:
 foreman start -f Procfile.dev -e .env.dev
 ```
 
-You can find example configurations in `Procfile.dev.example` and `.env.dev.example`
+Go to http://localhost:5000 to view your homepage.
 
 #### Service Dependencies
 
